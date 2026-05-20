@@ -10,7 +10,7 @@ typedef enum {
     ANDANDO_DIREITA
 } EstadoJogador;
 
-typedef struct {
+typedef struct Jogador{
     float posX;
     float posY;
     float largura;

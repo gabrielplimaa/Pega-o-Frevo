@@ -11,7 +11,7 @@ typedef enum {
     FASE_GAME_OVER
 } FaseJogo;
 
-typedef struct {
+typedef struct EstadoJogo{
     Jogador      foliao;
     ListaObjetos objetos;
     Ranking     *ranking;

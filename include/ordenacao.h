@@ -3,7 +3,7 @@
 
 #include "config.h"
 
-typedef struct {
+typedef struct EntradaRanking{
     char nome[TAMANHO_NOME];
     int pontuacao;
 } EntradaRanking;

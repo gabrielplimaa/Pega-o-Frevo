@@ -10,7 +10,7 @@ typedef enum {
     OBJETO_ROJAO        = 3
 } TipoObjeto;
 
-typedef struct {
+typedef struct Objeto{
     TipoObjeto tipo;
     float      posX;
     float      posY;

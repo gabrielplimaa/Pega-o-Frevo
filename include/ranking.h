@@ -4,7 +4,7 @@
 #include "ordenacao.h"
 #include "config.h"
 
-typedef struct {
+typedef struct Ranking{
     EntradaRanking entradas[MAX_RANKING];
     int total;
 } Ranking;

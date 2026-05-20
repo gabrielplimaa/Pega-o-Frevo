@@ -9,7 +9,7 @@ typedef struct NoLista {
     struct NoLista *proximo;
 } NoLista;
 
-typedef struct {
+typedef struct ListaObjetos{
     NoLista *inicio;
     int      quantidade;
 } ListaObjetos;
