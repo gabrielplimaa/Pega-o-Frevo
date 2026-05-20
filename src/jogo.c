@@ -21,6 +21,8 @@ void inicializarJogo(EstadoJogo *estado, Ranking *ranking, const char *nome) {
     estado->velocidade    = VELOCIDADE_BASE;
     estado->frameContador = 0;
     estado->nivel         = 0;
+    static int pontuacaoAnterior = 0;
+    pontuacaoAnterior = 0;
 
     strncpy(estado->nomeJogador, nome, TAMANHO_NOME - 1);
     estado->nomeJogador[TAMANHO_NOME - 1] = '\0';
@@ -29,8 +31,12 @@ void inicializarJogo(EstadoJogo *estado, Ranking *ranking, const char *nome) {
 static void atualizarNivel(EstadoJogo *estado) {
     int novoNivel = estado->foliao.pontuacao / PONTOS_POR_NIVEL;
     if (novoNivel > estado->nivel) {
-        estado->nivel      = novoNivel;
+        estado->nivel++;
+        
         estado->velocidade = VELOCIDADE_BASE + estado->nivel * INCREMENTO_VEL;
+        if (estado->velocidade > 17.5f) {
+            estado->velocidade = 17.5f;
+        }
     }
 }
 
