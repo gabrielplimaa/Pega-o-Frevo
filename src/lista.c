@@ -36,7 +36,7 @@ void moverObjetos(ListaObjetos *lista, float velocidade) {
 
 
 int detectarColisao(ListaObjetos *lista, float jogX, float jogY,
-                    float jogLarg, float jogAlt, int *vidasPerdidas) {
+                    float jogLarg, float jogAlt) {
     NoLista *anterior    = NULL;
     NoLista *atual       = lista->inicio;
     int      pontosGanhos = 0;

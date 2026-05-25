@@ -19,7 +19,7 @@ void inserirObjeto(ListaObjetos *lista, float posX, float posY, TipoObjeto tipo)
 void removerObjeto(ListaObjetos *lista, NoLista *anterior, NoLista *atual);
 void moverObjetos(ListaObjetos *lista, float velocidade);
 int  detectarColisao(ListaObjetos *lista, float jogX, float jogY,
-                     float jogLarg, float jogAlt, int *vidasPerdidas);
+                     float jogLarg, float jogAlt);
 int  contarObjetos(const ListaObjetos *lista);
 void limparLista(ListaObjetos *lista);
 
