@@ -21,8 +21,6 @@ void inicializarJogo(EstadoJogo *estado, Ranking *ranking, const char *nome) {
     estado->velocidade    = VELOCIDADE_BASE;
     estado->frameContador = 0;
     estado->nivel         = 0;
-    static int pontuacaoAnterior = 0;
-    pontuacaoAnterior = 0;
 
     strncpy(estado->nomeJogador, nome, TAMANHO_NOME - 1);
     estado->nomeJogador[TAMANHO_NOME - 1] = '\0';

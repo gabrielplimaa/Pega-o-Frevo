@@ -6,12 +6,12 @@
 #define TITULO_JANELA  "Pega o Frevo!"
 #define FPS_ALVO       60
 
-#define LARGURA_JOGADOR  115
-#define ALTURA_JOGADOR   115
+#define LARGURA_JOGADOR  129
+#define ALTURA_JOGADOR   129
 #define VELOCIDADE_JOGADOR 460.0f
 
-#define LARGURA_OBJETO    64
-#define ALTURA_OBJETO     64
+#define LARGURA_OBJETO    75
+#define ALTURA_OBJETO     75
 #define VELOCIDADE_BASE   5.0f
 #define INCREMENTO_VEL    0.5f
 #define INTERVALO_SPAWN   90
