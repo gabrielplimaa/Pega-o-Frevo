@@ -171,7 +171,7 @@ int telaEntradaNome(char *nomeDestino, int tamanhoMax) {
 }
 
 void telaRanking(const Ranking *ranking) {
-    Texture2D fundo = LoadTexture("sprites/cenario.jpeg");
+    Texture2D fundo = LoadTexture("sprites/cenario.png");
 
     while (!WindowShouldClose()) {
 
@@ -210,7 +210,7 @@ void telaRanking(const Ranking *ranking) {
 }
 
 void telaInstrucoes(void) {
-    Texture2D fundo = LoadTexture("sprites/cenario.jpeg");
+    Texture2D fundo = LoadTexture("sprites/cenario.png");
 
     while (!WindowShouldClose()) {
 

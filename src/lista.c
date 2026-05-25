@@ -52,11 +52,7 @@ int detectarColisao(ListaObjetos *lista, float jogX, float jogY,
         if (colidiu) {
             NoLista *proximo = atual->proximo;
 
-            if (obj->tipo == OBJETO_ROJAO) {
-                (*vidasPerdidas)++;
-            } else {
-                pontosGanhos += obj->pontos;
-            }
+            pontosGanhos += obj->pontos;
 
             removerObjeto(lista, anterior, atual);
             atual = proximo;

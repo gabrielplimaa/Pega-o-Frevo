@@ -81,7 +81,8 @@ void executarJogo(EstadoJogo *estado) {
             estado->frameContador++;
             if (estado->frameContador >= INTERVALO_SPAWN){
                 estado->frameContador = 0;
-                inserirObjeto(&estado->objetos, posXAleatoria(), -(float)ALTURA_OBJETO, tipoAleatorio());
+                if (contarObjetos(&estado->objetos) < 15)
+                    inserirObjeto(&estado->objetos, posXAleatoria(), -(float)ALTURA_OBJETO, tipoAleatorio());
             }
 
             moverObjetos(&estado->objetos, estado->velocidade);

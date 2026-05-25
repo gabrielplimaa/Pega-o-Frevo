@@ -11,6 +11,15 @@ void inicializarRanking(Ranking *ranking) {
 }
 
 void inserirNoRanking(Ranking *ranking, int pontuacao, const char *nome) {
+    for (int i = 0; i < ranking->total; i++) {
+        if (strncmp(ranking->entradas[i].nome, nome, TAMANHO_NOME) == 0) {
+            if (pontuacao > ranking->entradas[i].pontuacao)
+                ranking->entradas[i].pontuacao = pontuacao;
+            ordenarRanking(ranking);
+            return;
+        }
+    }
+
     if (ranking->total < MAX_RANKING) {
         ranking->entradas[ranking->total].pontuacao = pontuacao;
         strncpy(ranking->entradas[ranking->total].nome, nome, TAMANHO_NOME - 1);
