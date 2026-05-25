@@ -36,6 +36,7 @@ int main(void) {
         else if (opcao == MENU_INSTRUCOES) telaInstrucoes();
     }
 
+    exibirRanking(&ranking);
     CloseWindow();
     return 0;
 }
