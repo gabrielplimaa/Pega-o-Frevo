@@ -19,7 +19,8 @@ Jogo arcade carnavalesco onde você controla um **folião** que se move horizont
 
 ## Assista ao vídeo do jogo funcionando
 
-[![Assista ao vídeo](https://youtube.com/shorts/jdf87lMkVBw?si=sIv9Mi8TtGb_Wjxr)
+[![Assista ao vídeo](https://img.youtube.com/vi/jdf87lMkVBw/0.jpg)](https://youtube.com/shorts/jdf87lMkVBw)
+
 ## Pré-requisitos
 
 - WSL (Windows Subsystem for Linux) com Ubuntu 24.04
