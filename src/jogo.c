@@ -65,7 +65,7 @@ static void desenharGameOverFinal(int pontuacao, const char *nome) {
     DrawText(msg, LARGURA_TELA / 2 - MeasureText(msg, 18) / 2, 310, 18, YELLOW);
 
     const char *voltar = "ENTER ou TAB para voltar ao menu";
-    DrawText(voltar, LARGURA_TELA / 2 - MeasureText(voltar, 16) / 2, 350, 16, LIGHTGRAY);
+    DrawText(voltar, LARGURA_TELA / 2 - MeasureText(voltar, 16) / 2, 350, 16, WHITE);
 }
 
 void executarJogo(EstadoJogo *estado) {

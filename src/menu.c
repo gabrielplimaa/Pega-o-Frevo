@@ -99,7 +99,7 @@ OpcaoMenu exibirMenuPrincipal(void) {
 
             DrawText("Setas / WASD + ENTER para navegar",
                 LARGURA_TELA / 2 - MeasureText("Setas / WASD + ENTER para navegar", 13) / 2,
-                ALTURA_TELA - 28, 13, (Color){180, 180, 180, 180});
+                ALTURA_TELA - 28, 13, (Color){255, 255, 255, 255});
         EndDrawing();
     }
     UnloadTexture(fundo);
@@ -158,12 +158,12 @@ int telaEntradaNome(char *nomeDestino, int tamanhoMax) {
             DrawText(exibido, LARGURA_TELA / 2 - MeasureText(exibido, 26) / 2, 244, 26, COR_TITULO);
 
             DrawText("Letras, numeros e _ permitidos",
-                LARGURA_TELA / 2 - MeasureText("Letras, numeros e _ permitidos", 13) / 2,
-                300, 13, (Color){180, 180, 180, 200});
+                LARGURA_TELA / 2 - MeasureText("Letras, números e _ permitidos", 13) / 2,
+                300, 13, (Color){255, 255, 255, 255});
 
-            DrawText("ENTER para jogar  |  ESC para voltar",
-                LARGURA_TELA / 2 - MeasureText("ENTER para jogar  |  ESC para voltar", 14) / 2,
-                ALTURA_TELA - 36, 14, (Color){180, 180, 180, 180});
+            DrawText("ENTER para jogar  |  TAB para voltar",
+                LARGURA_TELA / 2 - MeasureText("ENTER para jogar  |  TAB para voltar", 14) / 2,
+                ALTURA_TELA - 36, 14, (Color){255, 255, 255, 255});
         EndDrawing();
     }
     UnloadTexture(fundo);
@@ -201,9 +201,9 @@ void telaRanking(const Ranking *ranking) {
                 }
             }
 
-            DrawText("ESC para voltar ao menu",
-                LARGURA_TELA / 2 - MeasureText("ESC para voltar ao menu", 14) / 2,
-                ALTURA_TELA - 36, 14, (Color){180, 180, 180, 180});
+            DrawText("TAB para voltar ao menu",
+                LARGURA_TELA / 2 - MeasureText("TAB para voltar ao menu", 14) / 2,
+                ALTURA_TELA - 36, 14, (Color){255, 255, 255, 255});
         EndDrawing();
     }
     UnloadTexture(fundo);
@@ -243,7 +243,7 @@ void telaInstrucoes(void) {
                 "",
                 "VIDAS:",
                 "  Voce comeca com 3 vidas.",
-                "  Cada item no chao = -1 vida. Perca tudo = fim!",
+                "  Cada item no chao = -1 vida, se perder todas, é o fim.",
                 "",
                 "NIVEL:",
                 "  A cada 10 pontos o jogo fica mais rapido."
@@ -253,12 +253,12 @@ void telaInstrucoes(void) {
             for (int i = 0; i < total; i++) {
                 Color cor = (linhas[i][0] != ' ' && linhas[i][0] != '\0')
                             ? COR_TITULO : COR_NORMAL;
-                DrawText(linhas[i], 60, 84 + i * 22, 16, cor);
+                DrawText(linhas[i], 60, 84 + i * 28, 20, cor);
             }
 
-            DrawText("ESC para voltar ao menu",
-                LARGURA_TELA / 2 - MeasureText("ESC para voltar ao menu", 14) / 2,
-                ALTURA_TELA - 28, 14, (Color){180, 180, 180, 180});
+            DrawText("TAB para voltar ao menu",
+                LARGURA_TELA / 2 - MeasureText("TAB para voltar ao menu", 14) / 2,
+                ALTURA_TELA - 28, 14, (Color){255, 255, 255, 255});
         EndDrawing();
     }
     UnloadTexture(fundo);
