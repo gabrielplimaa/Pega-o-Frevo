@@ -47,7 +47,7 @@ O binário será gerado em `build/pega-o-frevo`.
 
 ```bash
  # ou diretamente:
-./build/pega-o-frevo
+ make run
 ```
 
 ## Como jogar
