@@ -67,7 +67,6 @@ void desenharJogador(const Jogador *foliao) {
             frame = 0;
         }
 
-        // Flip horizontally when moving/facing left (negative width in src rect)
         int viradoEsquerda = (foliao->estadoAtual == ANDANDO_ESQUERDA) ||
                              (foliao->estadoAtual == PARADO && !facingRight);
         Rectangle src;

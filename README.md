@@ -16,6 +16,10 @@ Jogo arcade carnavalesco onde você controla um **folião** que se move horizont
 - A velocidade aumenta a cada **10 pontos** coletados.
 - Ao perder todas as vidas, seu nome entra no **ranking dos 5 melhores**.
 
+
+## Assista ao vídeo do jogo funcionando
+
+[![Assista ao vídeo](https://youtube.com/shorts/jdf87lMkVBw?si=sIv9Mi8TtGb_Wjxr)
 ## Pré-requisitos
 
 - WSL (Windows Subsystem for Linux) com Ubuntu 24.04
